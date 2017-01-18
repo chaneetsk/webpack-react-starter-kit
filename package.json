@@ -1,10 +1,11 @@
 {
-  "name": "Webpack React Starter Kit",
+  "name": "Starter-Kit",
   "version": "1.0.0",
-  "description": "Webpack React Starter Kit",
+  "description": "Starter Kit",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --content-base src --inline --hot",
     "start": "webpack -d"
   },
   "author": "Sanjeet Kanwar",
@@ -16,6 +17,8 @@
     "babel-preset-react": "^6.16.0",
     "babel-preset-stage-2": "^6.18.0",
     "css-loader": "^0.26.1",
+    "eslint": "^3.13.1",
+    "eslint-loader": "^1.6.1",
     "extract-text-webpack-plugin": "^1.0.1",
     "node-sass": "^4.1.1",
     "sass-loader": "^4.1.1",

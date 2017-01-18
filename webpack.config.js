@@ -16,6 +16,11 @@ var config = {
       {
         test: /\.js?/,
         include: SRC_DIR,
+        loader: 'eslint-loader?{rules:{semi:0}}'
+      },
+      {
+        test: /\.js?/,
+        include: SRC_DIR,
         loader: 'babel',
         query: {
           presets:['react','es2015','stage-2']
@@ -30,7 +35,10 @@ var config = {
   },
   plugins: [
     new ExtractTextPlugin('../css/main.css')
-  ]
+  ],
+  eslint: {
+    configFile: "./.eslintrc"
+  }
 };
 
 module.exports = config;
